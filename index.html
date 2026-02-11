@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CA-ELMedAssistant | AI Medical Assistant on WhatsApp</title>
+  <meta name="description" content="CA-ELMedAssistant is an early-stage AI-powered medical assistant on WhatsApp providing general, non-emergency health information." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111a2e;
+      --text:#e8eefc;
+      --muted:#b8c3e6;
+      --accent:#6aa7ff;
+      --border:rgba(255,255,255,.10);
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(106,167,255,.20), transparent 60%),
+                  radial-gradient(900px 500px at 80% 10%, rgba(128,255,207,.14), transparent 55%),
+                  var(--bg);
+      line-height:1.5;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 60px}
+    header{display:flex; justify-content:space-between; align-items:center; gap:16px}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:700}
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(106,167,255,.95), rgba(128,255,207,.75));
+    }
+    nav{display:flex; gap:14px; font-size:14px}
+    .card{
+      background: rgba(17,26,46,.85);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+    h1{font-size:34px; margin:0 0 12px}
+    h2{font-size:18px; margin:0 0 10px}
+    .lead{color:var(--muted)}
+    .hero{display:grid; grid-template-columns:1.3fr .9fr; gap:18px; margin-top:20px}
+    @media(max-width:860px){.hero{grid-template-columns:1fr}}
+    .pill{display:inline-block; margin:6px 6px 0 0; padding:6px 10px;
+      border-radius:999px; font-size:13px; color:var(--muted);
+      border:1px solid var(--border); background:rgba(255,255,255,.05)}
+    .btn{
+      display:inline-block; margin-top:14px; padding:10px 14px;
+      border-radius:12px; font-weight:600; font-size:14px;
+      border:1px solid var(--border); background:rgba(255,255,255,.06); color:var(--text)
+    }
+    .btnPrimary{
+      background: linear-gradient(135deg, rgba(106,167,255,.95), rgba(106,167,255,.55));
+      color:#071022;
+    }
+    .disclaimer{
+      margin-top:12px;
+      border-left:4px solid #ffc466;
+      background:rgba(255,196,102,.1);
+      padding:12px;
+      border-radius:12px;
+      font-size:13px;
+    }
+    footer{
+      margin-top:24px; padding-top:12px;
+      border-top:1px solid var(--border);
+      display:flex; justify-content:space-between;
+      font-size:12px; color:var(--muted)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <div>CA-ELMedAssistant</div>
+          <div style="font-size:13px;color:var(--muted)">Early-stage AI medical assistant</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#safety">Safety</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card">
+          <h1>AI health guidance on WhatsApp</h1>
+          <p class="lead">
+            <strong>CA-ELMedAssistant</strong> is an early-stage AI-powered medical assistant designed to provide
+            <strong>general, non-emergency</strong> health information through WhatsApp.
+          </p>
+
+          <span class="pill">Early-stage startup</span>
+          <span class="pill">WhatsApp chatbot</span>
+          <span class="pill">Built with Twilio</span>
+          <span class="pill">Non-emergency use</span>
+
+          <a class="btn btnPrimary" href="#contact">Request information</a>
+
+          <div class="disclaimer" id="safety">
+            <strong>Medical Disclaimer:</strong><br />
+            This service provides general health information only and does not offer medical diagnosis,
+            treatment, or emergency services. It is not a replacement for a licensed healthcare professional.
+            In case of emergency, contact your local emergency number immediately.
+          </div>
+        </div>
+
+        <aside class="card">
+          <h2>Project overview</h2>
+          <p style="color:var(--muted);font-size:14px">
+            CA-ELMedAssistant is currently in development and validation (MVP) phase.
+            Initial message volume is limited and the product will scale responsibly.
+          </p>
+
+          <ul style="color:var(--muted);font-size:14px">
+            <li>Primary channel: WhatsApp</li>
+            <li>Platform: Twilio WhatsApp API</li>
+            <li>Use case: Informational & service subscription</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="card" id="about" style="margin-top:18px">
+        <h2>About the project</h2>
+        <p style="color:var(--muted)">
+          We are a newly formed company building an AI-based assistant focused on accessibility,
+          safety, and responsible use of conversational AI in healthcare-related contexts.
+        </p>
+      </section>
+
+      <section class="card" id="privacy" style="margin-top:18px">
+        <h2>Privacy Policy (Summary)</h2>
+        <p style="color:var(--muted);font-size:14px">
+          We collect only the data required to operate the WhatsApp chatbot, such as messages and phone numbers.
+          Data is not sold and is used solely to provide and improve the service.
+        </p>
+        <p style="color:var(--muted);font-size:14px">
+          For privacy inquiries: <strong>privacy@yourdomain.com</strong>
+        </p>
+      </section>
+
+      <section class="card" id="contact" style="margin-top:18px">
+        <h2>Contact</h2>
+        <p style="color:var(--muted);font-size:14px">
+          Email: <strong>contact@yourdomain.com</strong><br />
+          Project name: CA-ELMedAssistant
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> CA-ELMedAssistant</div>
+      <div>Powered by Twilio & WhatsApp</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
