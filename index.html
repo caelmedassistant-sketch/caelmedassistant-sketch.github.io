@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CA-ELMedAssistant | AI Medical Assistant on WhatsApp</title>
-  <meta name="description" content="CA-ELMedAssistant is an early-stage AI-powered medical assistant on WhatsApp providing general, non-emergency health information." />
+  <title>CA-ELMedAssistant | Asistente administrativo por WhatsApp para consultorios</title>
+  <meta name="description" content="CA-ELMedAssistant es un asistente virtual administrativo para consultorios y profesionales de la salud. Automatiza citas, confirmaciones y comunicación por WhatsApp (no clínico)." />
   <style>
     :root{
       --bg:#0b1220;
@@ -73,6 +73,8 @@
       display:flex; justify-content:space-between;
       font-size:12px; color:var(--muted)
     }
+    .small{font-size:12px;color:var(--muted)}
+    ul{margin:10px 0 0 18px}
   </style>
 </head>
 
@@ -83,87 +85,96 @@
         <div class="logo"></div>
         <div>
           <div>CA-ELMedAssistant</div>
-          <div style="font-size:13px;color:var(--muted)">Early-stage AI medical assistant</div>
+          <div style="font-size:13px;color:var(--muted)">Asistente virtual administrativo (en desarrollo)</div>
         </div>
       </div>
       <nav>
-        <a href="#about">About</a>
-        <a href="#safety">Safety</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">Acerca</a>
+        <a href="#safety">Alcance</a>
+        <a href="#privacy">Privacidad</a>
+        <a href="#contact">Contacto</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <div class="card">
-          <h1>AI health guidance on WhatsApp</h1>
+          <h1>Automatización administrativa por WhatsApp para consultorios</h1>
           <p class="lead">
-            <strong>CA-ELMedAssistant</strong> is an early-stage AI-powered medical assistant designed to provide
-            <strong>general, non-emergency</strong> health information through WhatsApp.
+            <strong>CA-ELMedAssistant</strong> es un asistente virtual administrativo diseñado para ayudar a
+            consultorios y profesionales de la salud a <strong>gestionar citas, confirmaciones y comunicación</strong>
+            con pacientes a través de WhatsApp.
           </p>
 
-          <span class="pill">Early-stage startup</span>
-          <span class="pill">WhatsApp chatbot</span>
-          <span class="pill">Built with Twilio</span>
-          <span class="pill">Non-emergency use</span>
+          <span class="pill">MVP en desarrollo</span>
+          <span class="pill">WhatsApp</span>
+          <span class="pill">Agenda y recordatorios</span>
+          <span class="pill">Uso no clínico</span>
 
-          <a class="btn btnPrimary" href="#contact">Request information</a>
+          <a class="btn btnPrimary" href="#contact">Solicitar información</a>
 
           <div class="disclaimer" id="safety">
-            <strong>Medical Disclaimer:</strong><br />
-            This service provides general health information only and does not offer medical diagnosis,
-            treatment, or emergency services. It is not a replacement for a licensed healthcare professional.
-            In case of emergency, contact your local emergency number immediately.
+            <strong>Alcance del servicio (Importante):</strong><br />
+            CA-ELMedAssistant es una herramienta tecnológica para <strong>tareas administrativas</strong>.
+            No realiza diagnósticos, no recomienda tratamientos y no sustituye la consulta con un profesional
+            de la salud. En caso de emergencia, comunícate con los servicios de urgencias de tu localidad.
           </div>
+
+          <p class="small" style="margin-top:10px">
+            Nota: El acceso está limitado durante la fase de pruebas y validación.
+          </p>
         </div>
 
         <aside class="card">
-          <h2>Project overview</h2>
+          <h2>Resumen del proyecto</h2>
           <p style="color:var(--muted);font-size:14px">
-            CA-ELMedAssistant is currently in development and validation (MVP) phase.
-            Initial message volume is limited and the product will scale responsibly.
+            Estamos construyendo una solución para reducir la carga operativa del consultorio y mejorar la
+            atención administrativa a pacientes.
           </p>
 
           <ul style="color:var(--muted);font-size:14px">
-            <li>Primary channel: WhatsApp</li>
-            <li>Platform: Twilio WhatsApp API</li>
-            <li>Use case: Informational & service subscription</li>
+            <li>Canal principal: WhatsApp</li>
+            <li>Funciones: citas, confirmaciones, recordatorios, preguntas frecuentes</li>
+            <li>Enfoque: automatización administrativa (no clínico)</li>
           </ul>
         </aside>
       </section>
 
       <section class="card" id="about" style="margin-top:18px">
-        <h2>About the project</h2>
+        <h2>Acerca de CA-ELMedAssistant</h2>
         <p style="color:var(--muted)">
-          We are a newly formed company building an AI-based assistant focused on accessibility,
-          safety, and responsible use of conversational AI in healthcare-related contexts.
+          CA-ELMedAssistant es un proyecto en etapa inicial creado por <strong>Carlos</strong> y <strong>Elías</strong>.
+          Nuestro objetivo es ayudar a consultorios y clínicas a organizar su comunicación y agenda de forma eficiente,
+          manteniendo un enfoque responsable y seguro.
         </p>
       </section>
 
       <section class="card" id="privacy" style="margin-top:18px">
-        <h2>Privacy Policy (Summary)</h2>
+        <h2>Privacidad (Resumen)</h2>
         <p style="color:var(--muted);font-size:14px">
-          We collect only the data required to operate the WhatsApp chatbot, such as messages and phone numbers.
-          Data is not sold and is used solely to provide and improve the service.
+          Para operar el asistente por WhatsApp podemos procesar datos como mensajes, número telefónico y metadatos
+          necesarios para la entrega del servicio. No vendemos datos. El uso se limita a operar y mejorar la experiencia.
         </p>
         <p style="color:var(--muted);font-size:14px">
-          For privacy inquiries: <strong>privacy@yourdomain.com</strong>
+          Para consultas de privacidad: <strong>privacy@tudominio.com</strong>
+        </p>
+        <p class="small">
+          Recomendación: publicar una Política de Privacidad completa y un Aviso Legal (aunque sea 1 página).
         </p>
       </section>
 
       <section class="card" id="contact" style="margin-top:18px">
-        <h2>Contact</h2>
+        <h2>Contacto</h2>
         <p style="color:var(--muted);font-size:14px">
-          Email: <strong>contact@yourdomain.com</strong><br />
-          Project name: CA-ELMedAssistant
+          Email: <strong>caelmedassistant@gmail.com</strong><br />
+          Proyecto: CA-ELMedAssistant
         </p>
       </section>
     </main>
 
     <footer>
       <div>© <span id="year"></span> CA-ELMedAssistant</div>
-      <div>Powered by Twilio & WhatsApp</div>
+      <div>WhatsApp automation (administrativo)</div>
     </footer>
   </div>
 
